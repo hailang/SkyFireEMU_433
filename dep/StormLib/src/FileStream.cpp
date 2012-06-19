@@ -13,6 +13,16 @@
 /* 11.06.10  1.00  Lad  Derived from StormPortMac.cpp and StormPortLinux.cpp */
 /*****************************************************************************/
 
+#if defined __FreeBSD__
+#   define O_LARGEFILE      0100000
+#   define stat64 stat
+#   define _stat stat
+#   define _getcwd getcwd
+#   define off_t off64_t
+#   define lseek lseek64
+#   define fstat fstat64
+#endif
+
 #define __STORMLIB_SELF__
 #include "StormLib.h"
 #include "StormCommon.h"
