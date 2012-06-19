@@ -1,4 +1,4 @@
-﻿/*
+﻿
  * Copyright (C) 2010-2012 Project SkyFire <http://www.projectskyfire.org/>
  * Copyright (C) 2011 MigCore <http://wow-mig.ru/>
  *
